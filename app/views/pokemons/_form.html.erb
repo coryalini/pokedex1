@@ -1,0 +1,73 @@
+<%= form_for(@pokemon) do |f| %>
+  <% if @pokemon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pokemon.errors.count, "error") %> prohibited this pokemon from being saved:</h2>
+
+      <ul>
+      <% @pokemon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Number %><br>
+    <%= f.number_field :Number %>
+  </div>
+  <div class="field">
+    <%= f.label :Name %><br>
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Type %><br>
+    <%= f.text_field :Type %>
+  </div>
+  <div class="field">
+    <%= f.label :Level %><br>
+    <%= f.number_field :Level %>
+  </div>
+  <div class="field">
+    <%= f.label :Ability %><br>
+    <%= f.text_field :Ability %>
+  </div>
+  <div class="field">
+    <%= f.label :Height %><br>
+    <%= f.text_field :Height %>
+  </div>
+  <div class="field">
+    <%= f.label :Weight %><br>
+    <%= f.text_field :Weight %>
+  </div>
+  <div class="field">
+    <%= f.label :Gender %><br>
+    <%= f.text_field :Gender %>
+  </div>
+  <div class="field">
+    <%= f.label :Caught %><br>
+    <%= f.check_box :Caught %>
+  </div>
+  <div class="field">
+    <%= f.label :Location_Caught %><br>
+    <%= f.text_field :Location_Caught %>
+  </div>
+  <div class="field">
+    <%= f.label :Level_Caught %><br>
+    <%= f.number_field :Level_Caught %>
+  </div>
+  <div class="field">
+    <%= f.label :Shiny %><br>
+    <%= f.check_box :Shiny %>
+  </div>
+  <div class="field">
+    <%= f.label :PC %><br>
+    <%= f.check_box :PC %>
+  </div>
+  <div class="field">
+    <%= f.label :Can_Evolve %><br>
+    <%= f.check_box :Can_Evolve %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

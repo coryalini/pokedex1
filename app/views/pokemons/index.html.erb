@@ -1,0 +1,59 @@
+<body style="background-color: lightgray;"><p id="notice"><%= notice %></p>
+<h1>Listing Pokémons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> Number </th>
+      <th> Name </th>
+      <th> Type </th>
+      <th> Level </th>
+      <th> Ability </th>
+      <th> Height </th>
+      <th> Weight </th>
+      <th> Gender </th>
+      <th> Caught </th>
+      <th> Location caught </th>
+      <th> Level caught </th>
+      <th> Shiny </th>
+      <th> PC </th>
+      <th> Can evolve </th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pokemons.each do |pokemon| %>
+      <tr>
+        <td><%= pokemon.Number %></td>
+        <td><%= pokemon.Name %></td>
+        <td><%= pokemon.Type %></td>
+        <td><%= pokemon.Level %></td>
+        <td><%= pokemon.Ability %></td>
+        <td><%= pokemon.Height %></td>
+        <td><%= pokemon.Weight %></td>
+        <td><%= pokemon.Gender %></td>
+        <td><%= pokemon.Caught %></td>
+        <td><%= pokemon.Location_Caught %></td>
+        <td><%= pokemon.Level_Caught %></td>
+        <td><%= pokemon.Shiny %></td>
+        <td><%= pokemon.PC %></td>
+        <td><%= pokemon.Can_Evolve %></td>
+        <td><%= link_to 'Show', pokemon %></td>
+        <td><%= link_to 'Edit', edit_pokemon_path(pokemon) %></td>
+        <td><%= link_to 'Destroy', pokemon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pokemon', new_pokemon_path %>
+
+<div align="center"> <%=image_tag "logoBall.jpeg"%></div>
+<br></br>
+<br></br>
+<br></br>
+<div align="right"><form><a href=/pokedex><button type="button" style="background-color:white; font-size:15px" ><b>Main Menu</b></button ></a></form>
+

@@ -1,0 +1,30 @@
+<body style="background-color: lightgray;">
+<p id="notice"><%= notice %></p>
+
+<div align="right"><form><a href=/pokedex><button type="button" style="background-color:white; font-size:15px" ><b>Main Menu</b></button ></a></form></div>
+
+
+<center><h1>All Pokemon </h3></center>
+
+<table>
+  <thead>
+    <tr>
+      <th> Number </th>
+      <th> Name </th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%@allPokemon.each_with_index do |x, index|%>
+      <tr>
+        <td><%= index + 1 %></td>
+        <td><%= x %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+<div align="right"><form><a href=/pokedex><button type="button" style="background-color:white; font-size:15px" ><b>Main Menu</b></button ></a></form></div>

@@ -1,0 +1,21 @@
+<body style="background-color: lightgray;">
+<center><h1><%= image_tag "pokebank.jpeg"%> What part of your PC would you like to view?<%= image_tag "pokebank.jpeg"%></h1></center>
+
+<center><%= form_tag do%>
+	<br></br>
+	<form><a href=/pokemons/viewMyPokemon><button type="button" style="background-color:red; font-size:15px"><b>View my Pokémon</b></button ></a></form>
+	<br></br>
+	<form><a href=/pokemons/viewMyShiny><button type="button" style="background-color:black; color:white; font-size:15px"><b>View my shiny Pokémon</b></button ></a></form>
+	<br></br>
+	<form><a href=/pokemons/viewNotCaught><button type="button" style="background-color:black; color:white; font-size:15px" ><b>View Pokémon I have not caught</b></button ></a></form>
+	<br></br>
+	<form><a href=/pokemons><button type="button" style="background-color:white; font-size:15px" ><b>View All Pokémon</b></button ></a></form>
+<%end%></center>
+
+<br></br>
+<br></br>
+<br></br>
+<div align="right"><form><a href=/pokedex><button type="button" style="background-color:white; font-size:15px" ><b>Main Menu</b></button ></a></form>
+
+</body>
+

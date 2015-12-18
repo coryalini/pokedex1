@@ -1,0 +1,77 @@
+<body style="background-color: lightgray;">
+<p id="notice"><%= notice %></p>
+<div style ="float:right;"><%= image_tag @photo %></div>
+<p>
+  <strong>Number:</strong>
+  <%= @pokemon.Number %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pokemon.Name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @pokemon.Type %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @pokemon.Level %>
+</p>
+
+<p>
+  <strong>Ability:</strong>
+  <%= @pokemon.Ability %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @pokemon.Height %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @pokemon.Weight %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @pokemon.Gender %>
+</p>
+
+<p>
+  <strong>Caught:</strong>
+  <%= @pokemon.Caught %>
+</p>
+
+<p>
+  <strong>Location caught:</strong>
+  <%= @pokemon.Location_Caught %>
+</p>
+
+<p>
+  <strong>Level caught:</strong>
+  <%= @pokemon.Level_Caught %>
+</p>
+
+<p>
+  <strong>Shiny:</strong>
+  <%= @pokemon.Shiny %>
+</p>
+
+<p>
+  <strong>Pc:</strong>
+  <%= @pokemon.PC %>
+</p>
+
+<p>
+  <strong>Can evolve:</strong>
+  <%= @pokemon.Can_Evolve %>
+</p>
+
+<%= link_to 'Edit', edit_pokemon_path(@pokemon) %> |
+<%= link_to 'Back', pokemons_path %>
+
+

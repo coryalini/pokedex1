@@ -1,0 +1,16 @@
+<body style="background-color: lightgray;">
+<h3>Please write which pokemon you would like:</h3>
+
+<%= form_tag do%>
+	<p>Number: <%= text_field_tag(:numberInput)%> </p>
+	<p><%= submit_tag "Enter Number"%> </p>
+<%end%>
+
+<div align="left"><%= image_tag "dragonite.gif"%><%= image_tag "ash.jpeg"%>
+<br></br>
+<br></br>
+<br></br>
+<div align="right"><form><a href=/pokedex><button type="button" style="background-color:white; font-size:15px" ><b>Main Menu</b></button ></a></form>
+	
+
+

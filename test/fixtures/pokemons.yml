@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Number: 1
+  Name: MyString
+  Type: MyString
+  Level: 1
+  Ability: MyString
+  Height: 1.5
+  Weight: 1.5
+  Gender: MyString
+  Caught: false
+  Location_Caught: MyString
+  Level_Caught: 1
+  Shiny: false
+  PC: false
+  Can_Evolve: false
+
+two:
+  Number: 1
+  Name: MyString
+  Type: MyString
+  Level: 1
+  Ability: MyString
+  Height: 1.5
+  Weight: 1.5
+  Gender: MyString
+  Caught: false
+  Location_Caught: MyString
+  Level_Caught: 1
+  Shiny: false
+  PC: false
+  Can_Evolve: false
