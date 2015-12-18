@@ -11,10 +11,8 @@ class PokemonsController < ApplicationController
   # GET /pokemons/1
   # GET /pokemons/1.json
   def show
-    puts "MYNAME GLHGDHKLGDL", @pokemon.Name
     @photo = "gray.jpg"
     if @pokemon.Name == "kote" or @pokemon.Name == "Kote"
-      puts "LKGSHKLJGSHLJKLSHKLGDHKLDGSHJHGKLHKLGDSHLGDHKLDGSHLK", @pokemon.Name
       @photo = "surprise.jpg"
     else
       @photo = "gray.jpg"
